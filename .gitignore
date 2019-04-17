@@ -30,6 +30,5 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-# Ignore idea files
-.idea/workspace.xml
-.idea/codeStyles/
+# Ignore .idea files
+.idea
