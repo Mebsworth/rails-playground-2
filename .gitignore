@@ -31,4 +31,5 @@
 /config/master.key
 
 # Ignore idea files
-/.idea/*
+.idea/workspace.xml
+.idea/codeStyles/
