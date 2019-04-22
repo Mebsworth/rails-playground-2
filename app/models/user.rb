@@ -12,7 +12,10 @@ class User < ApplicationRecord
 # i	          case-insensitive
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
+  before_save { self.email = email.downcase }
+
   has_many :microposts
+
   validates :name, presence: true, length: { maximum: 50 }
   validates :email,
             presence: true,
